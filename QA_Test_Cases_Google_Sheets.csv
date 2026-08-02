@@ -1,0 +1,27 @@
+Test Case ID,Module,Test Scenario,Test Steps,Expected Result,Actual Result,Priority,Severity,Status
+TC-AUTH-01,Authentication,Register with valid data,"1. Navigate to Register.
+2. Enter valid First Name, Last Name, Email, Password.
+3. Submit.",Account created; verification email sent.,,High,Critical,Pending
+TC-AUTH-02,Authentication,Login with unverified email,"1. Enter valid credentials of unverified user.
+2. Submit.",Login prevented; prompt to verify email shown.,,High,Major,Pending
+TC-SEEK-01,Job Seeker,Swipe right on a Job,"1. Login as Seeker.
+2. View Job.
+3. Swipe Right.",Application record created (direction='right'; status='pending').,,High,Critical,Pending
+TC-SEEK-02,Job Seeker,Swipe left on a Job,"1. Login as Seeker.
+2. View Job.
+3. Swipe Left.",Job hidden/skipped; application NOT submitted.,,Medium,Minor,Pending
+TC-COMP-01,Company,Post a valid Job,"1. Login as Company.
+2. Fill all required fields.
+3. Submit.",Job is saved in jobs table; linked to company; visible to seekers.,,High,Critical,Pending
+TC-COMP-02,Company,Max Salary < Min Salary,"1. Enter Min Salary: 100k, Max Salary: 50k.
+2. Submit.",Validation error preventing submission.,,Medium,Major,Pending
+TC-RES-01,Resume ATS Parsing,Upload PDF Resume,"1. Go to Profile.
+2. Upload valid PDF.
+3. Submit.",Resume parsed; skills extracted into extracted_skills; text saved.,,High,Critical,Pending
+TC-RES-02,Resume ATS Parsing,Upload unsupported file,"1. Upload .exe or .txt.
+2. Submit.",Error message 'Unsupported file type'.,,Medium,Major,Pending
+TC-API-01,API Testing,Create Job Endpoint (POST /api/jobs),"1. Send POST with valid job payload.
+2. Check Response.",Status 201 Created; returns job_id.,,High,Critical,Pending
+TC-DB-01,Database,Cascade Delete Verification,"1. Create Seeker.
+2. Create Swipe.
+3. Delete Seeker.",Swipe record in applications table is removed (ON DELETE CASCADE).,,High,Critical,Pending
