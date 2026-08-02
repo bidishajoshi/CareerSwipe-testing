@@ -1,0 +1,14 @@
+{
+  "validSeeker": {
+    "email": "test.seeker@example.com",
+    "password": "Password123!"
+  },
+  "validCompany": {
+    "email": "test.company@example.com",
+    "password": "Password123!"
+  },
+  "invalidUser": {
+    "email": "invalid@example.com",
+    "password": "WrongPassword!"
+  }
+}
