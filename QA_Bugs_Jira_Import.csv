@@ -1,0 +1,6 @@
+Issue Type,Summary,Description,Priority,Environment,Status
+Bug,"Empty State Error on Job Feed",When no jobs match criteria the UI breaks and crashes instead of showing a 'No jobs found' graphic. Steps to reproduce: 1. Set filter to non-existent skill. 2. Click Search.,High,Prod - Chrome,Open
+Task,"Verify rate limiting on file uploads",Need to test and implement rate limiting on resume uploads to prevent DDoS and storage bloating.,Medium,Prod,Open
+Task,"Implement 'Undo Swipe' feature",Add an 'Undo Swipe' feature for premium users or within a 5-second window to improve UX.,Low,Prod,Open
+Task,"Implement rate-limiting on swipes",Prevent bot-like behavior by restricting the number of rapid right swipes.,Medium,Prod,Open
+Bug,"Max Salary validation bypassing",Investigate if Max Salary < Min Salary validation is enforced on the backend.,High,Prod,Open
